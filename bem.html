@@ -1,0 +1,115 @@
+<!-- БЭМ -->
+<!-- Блок Элемент Модификатор -->
+<div class="page-header__logo"></div>
+<div class="header__logo"></div>
+<div class="logo"></div>
+
+<!-- Блок__Элемент--Модификатор (международный вариант) -->
+<div class="list__item--active"></div>
+
+<!-- Блок__Элемент_Модификатор (Yandex - вариант) -->
+<div class="list__item_active"></div>
+
+<!-- Блок - независимый компонент, название блока характеризует смысл "что это?" -->
+
+<!-- Верно -->
+<div class="logo"></div>
+<div class="menu"></div>
+<div class="error"></div>
+
+<!-- Неверно -->
+<div class="big-item"></div>
+<div class="orang-text"></div>
+
+<!-- Принцип работы с блоками -->
+<header class="header">
+  <div class="logo"></div>
+  <nav class="menu"></nav>
+</header>
+
+<!-- Элемент - составная часть блока, которая не может использоваться в отрыве от него. Название элемента характеризует смысл "что это?" -->
+
+<header class="header">
+  <div class="header__logo"></div>
+  <nav class="header__menu"></nav>
+</header>
+
+<form class="search-form">
+  <input class="search-form__input">
+  <button class="search-form__button">Найти</button>
+</form>
+
+<!-- Вложенность -->
+
+<!-- Верно -->
+<div class="about">
+  <div class="about__inner">
+    <div class="about__items"></div>
+  </div>
+</div>
+
+<!-- Неверно -->
+<div class="about">
+  <div class="about__inner">
+    <div class="about__inner__items"></div>
+  </div>
+</div>
+
+<!-- Важный принцип вложенности -->
+
+<!-- Пример -->
+<div class="block">
+  <div class="block__elem1">
+    <div class="block__elem2">
+      <div class="block__elem3"></div>
+    </div>
+  </div>
+</div>
+
+<!-- CSS - без вложенности -->
+.block {}
+.block__elem1 {}
+.block__elem2 {}
+.block__elem3 {}
+
+<!-- Элемент - необязательный компонент блока. Не у всех блоков должны быть элементы -->
+
+<!-- Модификатор -->
+
+<!-- Сущность, определяющая внешний вид, состояние или поведение блока либо элемента -->
+<!-- Название модификатора характеризует внешний вид "какой размер?", "какая тема?" -->
+active
+size--lg
+<!-- Типы модификаторов -->
+<!-- Булевый -->
+<!-- Используют, когда важно только наличие или отсутствие модификатора -->
+active
+disabled
+focused
+<!-- Ключ-значение -->
+<!-- Используют, когда важно значение модификатора -->
+size--lg
+theme--space
+theme--winter
+<!-- Структура полного имени модификатора соответствует схеме: -->
+<!-- имя-блока--имя-модификатора--значение-модификатора -->
+<!-- имя-блока__имя-элемента--имя-модификатора--значение-модификатора -->
+
+<a class="menu__link menu__link--active"></a>
+<a class="menu__link"></a>
+<a class="menu--active"></a>
+
+<!-- Модификатор нельзя использовать самостоятельно -->
+
+<!-- Микс -->
+<!-- Прием, позволяющий использовать разные БЭМ-сущности на одном DOM-узле -->
+<div class="header__search-form search-form"></div>
+
+<!-- Файловая структура -->
+<div class="title"></div>
+
+.title{}
+
+title.html
+title.css
+title.js
