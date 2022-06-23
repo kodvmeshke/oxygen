@@ -1,15 +1,19 @@
+body {
+  background-color: #f2f2f2;
+}
+
 .header {
   width: 1440px;
   height: 752px;
 
   margin: 0 auto;
-  background-color: darksalmon;
+  background-image: url(/img/Header-bg.jpg);
 }
 
 .header__top {
   height: 94px;
 
-  background-color: darkseagreen;
+  background-color: #fff;
 }
 
 .header__top-inner {
@@ -17,7 +21,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 26px 52px;
+  padding: 26px 47px 26px 52px;
 }
 
 /* .logo {} */
@@ -31,56 +35,75 @@
 .menu__list {
   display: flex;
   align-items: center;
-  height: 38px;
-  gap: 38px;
-
-  background-color: lightskyblue;
+  height: 34px;
+  gap: 40px;
 }
 
-.menu__list-item {
-  padding-left: 6px;
-  padding-right: 6px;
-}
+.menu__list-item {}
 
 .menu__link {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+  color: #373a39;
+  
+  padding: 9px 5px;
   text-decoration: none;
 }
 
-/* .menu__link--active {} */
+.menu__link--active {
+  border-bottom: 2px solid #fcbb08;
+}
 
 /* .header__content {} */
 
-/* .header__content-inner {} */
+.header__content-inner {
+  position: relative;
+}
 
 .header__content-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 213px;
+  left: 500px;
   width: 440px;
   height: 122px;
-  margin-top: 213px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-color: mediumturquoise;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100px;
+  color: #fff;
 }
 
 .header__content-discription {
-  width: 166px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 353px;
+  left: 637px;
+  width: 200px;
   height: 20px;
-  margin-top: 18px;
-  margin-bottom: 180px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-color: aquamarine;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2.74px;
+  color: #fcbb08;
 }
 
 .header__content-decor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  top: 553px;
+  left: 707px;
   width: 26px;
   height: 43px;
   margin: 0 auto;
-
-  background-color: darkkhaki;
+  background-image: url(/img/mouse.png);
 }
-
+**************************************************
 .about {
   width: 1440px;
   height: 491px;
