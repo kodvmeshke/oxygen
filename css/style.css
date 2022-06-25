@@ -24,22 +24,12 @@ body {
   padding: 26px 47px 26px 52px;
 }
 
-/* .logo {} */
-
-/* .logo__link {} */
-
-/* .logo__img {} */
-
-/* .menu {} */
-
 .menu__list {
   display: flex;
   align-items: center;
   height: 34px;
   gap: 40px;
 }
-
-/* .menu__list-item {} */
 
 .menu__link {
   font-family: 'Raleway', sans-serif;
@@ -54,8 +44,6 @@ body {
 .menu__link--active {
   border-bottom: 2px solid #fcbb08;
 }
-
-/* .header__content {} */
 
 .header__content-inner {
   position: relative;
@@ -111,8 +99,6 @@ body {
   margin: 0 auto;
   background-color: #f6f8fa;
 }
-
-/* .about__inner {} */
 
 .about__title {
   position: absolute;
@@ -278,8 +264,6 @@ body {
   width: 50px;
   height: 50px;
 }
-
-/* .expertise__item-box {} */
 
 .expertise__item-title {
   font-family: 'Raleway', sans-serif;
@@ -503,10 +487,6 @@ position: relative;
   color: #ededed;
   content: "";
 }
-
-/* .portfolio__item-title {} */
-
-/* .portfolio__item-descr {} */
 
 .portfolio__btn-all {
   position: relative;
