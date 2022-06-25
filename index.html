@@ -8,7 +8,7 @@
   <title>OXYGEN</title>
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@700&family=Open+Sans:wght@300;400;600&family=Raleway:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Montserrat:wght@300;700&family=Open+Sans:wght@300;400;600&family=Raleway:wght@700&display=swap">
 </head>
 
 <body>
@@ -322,11 +322,11 @@
   </section>
   <section class="pricing">
     <div class="pricing__title">Pricing Plans</div>
+    <div class="pricing__title--line"></div>
     <div class="pricing__items">
       <div class="pricing__item">
         <div class="pricing__item-name">Basic</div>
-        <div class="pricing__item-rate">
-          29<span>/ mo</span>
+        <div class="pricing__item-rate">29<span>/ mo</span>
         </div>
         <ul class="pricing__list">
           <li class="pricing__list-item">1 Logo Design</li>
@@ -335,12 +335,11 @@
           <li class="pricing__list-item">3 Month License</li>
           <li class="pricing__list-item">1 GB Storage</li>
         </ul>
-        <button class="pricing__btn">CHOOSE PLAN</button>
+        <div class="pricing__btn">CHOOSE PLAN</div>
       </div>
       <div class="pricing__item">
         <div class="pricing__item-name">Starter</div>
-        <div class="pricing__item-rate">
-          50<span>/ mo</span>
+        <div class="pricing__item-rate">50<span>/ mo</span>
         </div>
         <ul class="pricing__list">
           <li class="pricing__list-item">2 Logo Design</li>
@@ -349,12 +348,11 @@
           <li class="pricing__list-item">6 Month License</li>
           <li class="pricing__list-item">1 GB Storage</li>
         </ul>
-        <button class="pricing__btn">CHOOSE PLAN</button>
+        <div class="pricing__btn">CHOOSE PLAN</div>
       </div>
       <div class="pricing__item">
         <div class="pricing__item-name">Professional</div>
-        <div class="pricing__item-rate">
-          70<span>/ mo</span>
+        <div class="pricing__item-rate">70<span>/ mo</span>
         </div>
         <ul class="pricing__list">
           <li class="pricing__list-item">3 Logo Design</li>
@@ -363,7 +361,7 @@
           <li class="pricing__list-item">12 Month License</li>
           <li class="pricing__list-item">2 GB Storage</li>
         </ul>
-        <button class="pricing__btn">CHOOSE PLAN</button>
+        <div class="pricing__btn">CHOOSE PLAN</div>
       </div>
     </div>
   </section>
@@ -372,10 +370,11 @@
     <div class="container">
       <div class="contact__content">
         <div class="contact__title">Get in Touch</div>
-        <form action="" class="contact__form">
-          <input class="contact__form-input" type="text" placeholder="YOUR NAME">
-          <input class="contact__form-input" type="text" placeholder="VALID EMAIL">
-          <textarea class="contact__form-textarea" placeholder="YOUR MESSAGE"></textarea>
+        <div class="contact__title--line"></div>
+        <form class="contact__form">
+          <input class="contact__form-input" type="text" placeholder="YOUR NAME" value="YOUR NAME">
+          <input class="contact__form-input" type="text" placeholder="VALID EMAIL" value="VALID EMAIL">
+          <textarea class="contact__form-textarea" placeholder="YOUR MESSAGE" value="YOUR MESSAGE"></textarea>
           <button class="contact__form-btn">SEND MESSAGE</button>
         </form>
       </div>
@@ -385,9 +384,9 @@
   <footer class="footer">
     <div class="footer__content">
       <div class="container">
-        <div class="logo logo--line">
+        <div class="footer__logo footer__logo--line">
           <a class="logo__link" href="#">
-            <img class="logo__img" src="" alt="">
+            <img class="logo__img" src="#" alt="">
           </a>
         </div>
         <div class="footer__social">
@@ -403,7 +402,7 @@
           <a class="footer__adress--phone" href="tel:0038765252222">(00387) 65 252 222</a>
           <a class="footer__adress--email" href="mailto:info@mail.com">info@mail.com</a>
         </div>
-        <button class="footer-to__top-btn"></button>
+        <div class="footer-to__top-btn"></div>
       </div>
     </div>
     <div class="footer__copy">@2015 Oxygen Theme</div>
