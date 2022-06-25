@@ -394,15 +394,115 @@ position: relative;
 }
 
 .portfolio__items {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
   position: relative;
+  text-align: center;
   top: 336px;
   width: 1440px;
   height: 912px;
-
-  background-color: lightcoral;
+  background-color: #fff;
 }
 
-/* .portfolio__item-img {} */
+.portfolio__item-img-1 {
+  width: 343px;
+  height: 494px;
+  background-color: #ededed;
+  color: #ededed;
+  content: "";
+}
+
+.portfolio__item-img-2 {
+  width: 343px;
+  height: 395px;
+  background-color: #ededed;
+  color: #ededed;
+  content: "";
+}
+.portfolio__item-img-3 {
+  position: relative;
+  width: 343px;
+  height: 288px;
+  background-color: #373a39;
+  outline: 12px solid #242121;
+  outline-offset: -12px;
+}
+
+.portfolio__item-title-3 {
+  position: absolute;
+  top: 124px;
+  left: 103px;
+  width: 137px;
+  height: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1.4px;
+  color: #fff;
+}
+
+.portfolio__item-descr-3 {
+  position: absolute;
+  top: 148px;
+  left: 148px;
+  width: 47px;
+  height: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
+
+.portfolio__item-img-4 {
+  width: 343px;
+  height: 288px;
+  background-color: #ededed;
+  color: #ededed;
+  content: "";
+}
+
+.portfolio__item-img-5 {
+  width: 343px;
+  height: 292px;
+  background-color: #ededed;
+  color: #ededed;
+  content: "";
+}
+
+.portfolio__item-img-6 {
+  width: 343px;
+  height: 367px;
+  background-color: #ededed;
+  color: #ededed;
+  content: "";
+}
+
+.portfolio__item-img-7 {
+  width: 343px;
+  height: 523px;
+  background-color: #ededed;
+  color: #ededed;
+  content: "";
+}
+
+.portfolio__item-img-8 {
+  width: 343px;
+  height: 318px;
+  background-color: #ededed;
+  color: #ededed;
+  content: "";
+}
+
+.portfolio__item-img-9 {
+  width: 343px;
+  height: 572px;
+  background-color: #ededed;
+  color: #ededed;
+  content: "";
+}
 
 /* .portfolio__item-title {} */
 
